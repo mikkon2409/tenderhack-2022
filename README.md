@@ -1,6 +1,6 @@
 # Проект для хакатона TenderHack
 
-![Задание хакатона](https://github.com/mikkon2409/tenderhack-2022/raw/main/common/images/tasks_and_goals.png/image.png)
+![Задание хакатона](https://github.com/mikkon2409/tenderhack-2022/raw/main/common/images/tasks_and_goals.png)
 
 ## Окружение
 
