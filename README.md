@@ -9,6 +9,7 @@
 ## Как начать
 
 * `git clone git@github.com:mikkon2409/tenderhack-2022.git tenderhack`
+* `cd tenderhack`
 * `python -m venv venv`
 * `venv\Scripts\activate.bat`
 * `pip install -r requirements.txt`
