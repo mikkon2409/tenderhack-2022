@@ -14,8 +14,9 @@
 	<div class="searchh">
 		<input class="search" type="search" name="search"
 			onfocus="(document.getElementById('block').classList.toggle('hidden'))"
-			onblur="(document.getElementById('block').classList.toggle('hidden'))">
-		<i class="fa-solid fa-magnifying-glass"></i>
+			onblur="(document.getElementById('block').classList.toggle('hidden'))"
+			oninput="getRequest()">
+		<i class="fa-solid fa-magnifying-glass" onclick="getRequest()"></i>
 	</div>
 
 	<table class="hidden" id="block" border="1" , width="600" align="center" style="margin-top: 30px;">
