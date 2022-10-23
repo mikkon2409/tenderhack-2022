@@ -1,3 +1,6 @@
 pydantic
 flask
 pandas
+transliterate
+nltk
+language_tool_python

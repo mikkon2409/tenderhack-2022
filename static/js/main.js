@@ -2,7 +2,7 @@ let rows = [];
 function getRequest() {
   var xhr = new XMLHttpRequest();
 
-  xhr.open('POST', 'http://127.0.0.1:5000/query-example', true);
+  xhr.open('POST', '/search', true);
   xhr.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
   xhr.send(document.getElementById('search').value);
 
