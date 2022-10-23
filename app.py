@@ -1,8 +1,7 @@
-from random import randint
+import flask
 from flask import Flask, render_template, request
 import json
-import pymorphy2
-import re
+
 
 
 app = Flask(__name__,
@@ -14,13 +13,14 @@ app = Flask(__name__,
 def index():
     return render_template('index.html')
 
-@app.route('/query-example')
+@app.route('/query-example', methods=['POST'])
 def query_example():
-    text = request.args.get('text')
-    reg = re.compile('[^а-яА-Я ]')
-    return text
+    text = request.get_data(as_text=True)
+    print(text)
+    return json.dumps(['товар1', 'товар2', 'товар3'])
 
 
-
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)
 
 
