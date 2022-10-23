@@ -4,3 +4,4 @@ pandas
 transliterate
 nltk
 language_tool_python
+pymorphy2
