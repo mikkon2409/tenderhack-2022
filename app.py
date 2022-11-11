@@ -7,6 +7,7 @@ from transliterate.discover import autodiscover
 import nltk
 import language_tool_python as ltp
 from pymorphy2 import MorphAnalyzer
+from KDTree import KDTree
 
 
 
@@ -56,13 +57,14 @@ def index():
 @app.route('/search', methods=['POST'])
 def query_example():
     text = request.get_data(as_text=True)
-    print(text)
-    normed_text = normalize_text(text)
-    return json.dumps(normed_text)
+    # print(text)
+    # normed_text = normalize_text(text)
+    requestt = tool_ru.correct(text.lower())
+    print(requestt)
+    data = [{'':item} for item in enumerate(KDTree.find(requestt).to_list())]
+    return json.dumps(data, ensure_ascii=False)
 
 
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
-
-
