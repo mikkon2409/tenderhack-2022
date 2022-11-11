@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 import fasttext
 
-data_frame = pd.read_pickle('C:/Users/kozyr/OneDrive/Рабочий стол/хакатон/tenderhack/common/samples/СТЕ_vectorized.pickle')
-df = pd.read_pickle('C:/Users/kozyr/OneDrive/Рабочий стол/хакатон/tenderhack/common/samples/СТЕ_База.pickle')
+data_frame = pd.read_pickle('D:/saveeeee/tenderhack/common/samples/СТЕ_vectorized.pickle')
+df = pd.read_pickle('D:/saveeeee/tenderhack/common/samples/СТЕ_База.pickle')
 data_array = data_frame['Название СТЕ'].to_numpy()
 arr = np.vstack(data_array)
 tree = spatial.KDTree(arr)

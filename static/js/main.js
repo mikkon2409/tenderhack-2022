@@ -28,7 +28,7 @@ function getRequest() {
           var newCell = newRow.insertCell();
     
           // Append a text node to the cell
-          var newText = document.createTextNode(element);
+          var newText = document.createTextNode(element['']['1']);
           newCell.appendChild(newText)
         });
       }
